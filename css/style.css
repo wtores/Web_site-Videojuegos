@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+
+:root {
+    --primary-color: #000000;
+    --secundary-color:#ff5a2c;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Russo One", sans-serif;
+}
+
+p, a, li, label, input {
+    font-family: "Teko", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+header nav {
+    width: 100%;
+    background: var(--primary-color);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#666;
+    font-weight: 600;
+    transition: .5s;
+    padding: 5px ;
+    font-size: 18px;
+    
+}
+
+ul li a:hover{
+    color:var(--secundary-color) ;
+    border-bottom: 1px solid var(--secundary-color);
+}
+
+#hero{
+    width: 100%;
+    background: url(../img/fondo1.gif);
+    background-size:cover;
+    padding: 176px 0 180px;
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 25px ;
+}
+main{
+    width: 100%;
+    position: relative;
+}
+
+/* Historia */
+
+#H{
+    background: url(../img/Fondo2.gif);
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+}
+#H .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+#H p{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+#H .a{
+    padding: 20px;
+}
+
+#H h1{
+    color:var(--secundary-color);;
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+#H .a{
+    position: relative;
+    z-index: 3;
+}
+
+#H img{
+    width: 200px;
+    height: 150px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#H img:hover{
+    transform:rotate(360deg);
+}
+
+/* PlayStation */
+#P{
+    width: 100%;
+    background:url(../img/play.gif);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+ }
+ #P h1{
+    color: #dc143d;;
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+ }
+ #P p{
+    text-align: center;
+    color: #6495ed;
+ }
+
+
+ #P .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+#P .fila .col-play .L{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ #P img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #P img:hover{
+    transform: scale(0.5);
+ }
+
+ #P button{
+    background:var(--primary-color);
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color: #ffd800;;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #P button:hover{
+    transform: scale(1.1);
+    background: var(--secundary-color);
+    color:var(--primary-color);
+ }
+
+ 
+/* Xbox */
+#X{
+    width: 100%;
+    background:url(../img/xbox.gif);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+ }
+ #X p{
+    text-align: center;
+    color:#008000;
+ }
+ #X h1{
+    color: #008000;
+ }
+
+
+ #X .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+#X .fila .col-xbox .L{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ #X img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #X img:hover{
+    transform:translateY(-30px);
+ }
+
+ #X button{
+    background:var(--primary-color);
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color:#008000;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #X button:hover{
+    transform: scale(1.1);
+    background: var(--secundary-color);
+    color:var(--primary-color);
+ }
+
+ /* Nintento */
+
+ #N{
+    width: 100%;
+    background:url(../img/nintendo.gif);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+ }
+ #N p{
+    text-align: center;
+    color:#fff;
+ }
+ #N h1{
+    color:#dc143d;
+ }
+
+
+ #N .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+#N .fila .col-Nin .L{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ #N img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #N img:hover{
+    transform:scale(1.5);
+ }
+
+ #N button{
+    background:var(--primary-color);
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color:#fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #N button:hover{
+    transform: scale(1.1);
+    background: var(--secundary-color);
+    color:var(--primary-color);
+ }
+
+ /* pc */
+ #PC{
+    width: 100%;
+    background:url(../img/pc.gif);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+ }
+ #PC p{
+    text-align: center;
+    color:#fff;
+ }
+ #PC h1{
+    color:#dc143d;
+ }
+
+
+ #PC .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+#PC .fila .col-pc .L{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ #PC img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #PC img:hover{
+    transform:skew(10deg);
+ }
+
+ #PC button{
+    background:var(--primary-color);
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color:#fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #PC button:hover{
+    transform: scale(1.1);
+    background: var(--secundary-color);
+    color:var(--primary-color);
+ }
+
+/* Moviles */
+
+#M{
+    width: 100%;
+    background:url(../img/ip.gif);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    position: relative;
+    z-index: 2;
+ }
+ #M p{
+    text-align: center;
+    color:#5828c7;
+ }
+ #M h1{
+    color:#72127a;
+ }
+
+
+ #M .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+#M .fila .col-Mo .L{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+ #M img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #M img:hover{
+    transform:rotateY(180deg);
+ }
+
+ #M button{
+    background:var(--primary-color);
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color:#fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #M button:hover{
+    transform: scale(1.1);
+    background: var(--secundary-color);
+    color:var(--primary-color);
+ }
+
+ /* Footer */
+ footer p {
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+    z-index: 3;
+ }
+
+ footer  img{
+    width: 90px;
+    height: 85px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
